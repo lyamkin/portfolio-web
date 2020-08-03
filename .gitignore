@@ -1,0 +1,4 @@
+bin/
+node_modules/
+*.pyc, *.log
+Thumbs.db, DS_Store

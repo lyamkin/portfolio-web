@@ -1,0 +1,35 @@
+{
+  "name": "portfolio-web",
+  "version": "1.0.0",
+  "description": "My personal portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "watch:bootstrap": "node-sass sass/vendors/bootstrap/bootstrap.scss css/bootstrap.css -w",
+    "watch:style": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:bootstrap watch:style",
+
+    "compile:bootstrap": "node-sass sass/vendors/bootstrap/bootstrap.scss css/bootstrap.compiled.css",
+    "compress:bootstrap": "node-sass css/bootstrap.compiled.css css/bootstrap.css --output-style compressed",
+    "compile:style": "node-sass sass/main.scss css/style.compiled.css",
+    "prefix:style": "postcss --use autoprefixer -b 'last 10 versions' css/style.compiled.css -o css/style.css",
+    "build:css": "npm-run-all compile:bootstrap compile:style prefix:style compress:bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyamkin/portfolio-web.git"
+  },
+  "author": "Andrey Lyamkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyamkin/portfolio-web/issues"
+  },
+  "homepage": "https://github.com/lyamkin/portfolio-web#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.1"
+  },
+  "dependencies": {}
+}
