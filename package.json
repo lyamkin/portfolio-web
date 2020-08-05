@@ -7,7 +7,7 @@
     "watch:bootstrap": "node-sass sass/vendors/bootstrap/bootstrap.scss css/bootstrap.css -w",
     "watch:style": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:bootstrap watch:style",
+    "start": "npm-run-all --parallel watch:bootstrap watch:style",
 
     "compile:bootstrap": "node-sass sass/vendors/bootstrap/bootstrap.scss css/bootstrap.compiled.css",
     "compress:bootstrap": "node-sass css/bootstrap.compiled.css css/bootstrap.css --output-style compressed",

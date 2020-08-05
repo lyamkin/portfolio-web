@@ -1,0 +1,42 @@
+.about {
+    margin-top: 75px;
+    position: relative;
+    height: 400px;
+
+
+    &-link:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &-link:link,
+    &-link:visited {
+        color: #fff; 
+    }
+    &-link {
+
+        &-1:hover,
+        &-1:active {
+            color: #007bb5;
+        } 
+        &-2:hover,
+        &-2:active {
+            color: #000000;
+        } 
+        &-3:hover,
+        &-3:active {
+            color: #dd4b39;
+        } 
+
+        &-4:hover,
+        &-4:active {
+            color: #099204;
+        } 
+    }
+}
+
+.skills {
+    &-set>* {
+        margin-right: 1rem;
+    }
+}
+

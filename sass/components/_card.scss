@@ -1,0 +1,17 @@
+.card {
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .5);
+
+    &-link:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+
+    &-link:link,
+    &-link:visited {
+        color: $color-primary-light;
+    }
+
+    &-link:hover,
+    &-linl:active {
+        
+    }
+}

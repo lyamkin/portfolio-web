@@ -1,0 +1,25 @@
+@import "../abstracts/variables.scss";
+
+.navbar {
+    padding: 1rem;
+    border-bottom: 1px solid $color-primary;
+    box-shadow: 0 .2rem .5rem $color-primary;
+    opacity: 0.8;
+
+    a:visited,
+    a:link {
+      text-transform: uppercase; 
+      font-weight: 400;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom .5s; 
+    }
+
+    a:hover,
+    a:active {
+        border-bottom: 2px solid $color-primary;
+    }
+    li:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+}
