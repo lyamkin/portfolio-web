@@ -1,6 +1,6 @@
 .navbar {
   padding: 1rem;
-  border-bottom: 1px solid #0082c6;
+  border-bottom: 2px solid #0082c6;
   box-shadow: 0 0.2rem 0.5rem #0082c6;
   opacity: 0.8; }
   .navbar a:visited,
@@ -16,11 +16,48 @@
     margin-right: 2rem; }
 
 .card {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  height: 100%; }
   .card-link:not(:last-child) {
     margin-right: 2.5rem; }
   .card-link:link, .card-link:visited {
-    color: #0babff; }
+    display: inline-block;
+    text-decoration: none;
+    color: #0082c6;
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all .5s; }
+  .card-link:hover {
+    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-4px); }
+  .card-link:active {
+    text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 100%; }
+  @media only screen and (max-width: 991.98px) {
+    html {
+      font-size: 93.75%; } }
+  @media only screen and (max-width: 767.98px) {
+    html {
+      font-size: 87.5%; } }
+  @media only screen and (max-width: 575.98px) {
+    html {
+      font-size: 81.25%; } }
+
+body {
+  box-sizing: border-box; }
+
+.header-secondary {
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 3px; }
 
 .bg-overlay {
   position: absolute;
@@ -48,19 +85,8 @@
   background-color: #0082c6;
   color: #fff; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 100%; }
-
-body {
-  box-sizing: border-box; }
-
 .about {
-  margin-top: 75px;
+  margin-top: 4.68rem;
   position: relative;
   height: 400px; }
   .about-link:not(:last-child) {

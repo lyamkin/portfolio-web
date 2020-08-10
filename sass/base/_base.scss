@@ -4,8 +4,21 @@
     box-sizing: inherit;
 }
 html {
-    font-size: 100%;
+    font-size: 100%; // 1em=16. 16px
+
+    @include media-breakpoint-down(lg) {
+        font-size: 93.75%; //15px 15/16*100=93.75
+    }
+
+    @include media-breakpoint-down(md) {
+        font-size: 87.5%; //14px 14/16*100=87.5
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 81.25%; //13px 13/16*100=81.25
+    }
 }
+
 body {
     box-sizing: border-box;
     // background-color: $color-background-light;

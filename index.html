@@ -69,37 +69,74 @@
 
   <!-- PROJECTS SECTION -->
 
-  <section id="projects" class="projects py-5 text-center">
+  <section id="projects" class="projects py-5 text-center text-muted">
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="text-white py-5">
-            <h2 class="text-muted">Explore my recent projects</h2>
+            <h2 class="text-muted header-secondary">Explore my recent projects</h2>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="card mb-5">
-            <img src="img/image.jpg" class="card-img-top" alt="First project screenshot">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="img/adventure.png" class="card-img-top" alt="Adventure project screenshot">
             <div class="card-body">
-              <h3>Adventure tours website</h3>
-              <p class="card-text">This is static, one page website with lots of modern CSS features and animations. Fully responsive and optimized. Can be used like a template to build more advanced project.</p>
+              <h3>One page website</h3>
+              <p class="card-text">This is a static, one-page website with lots of modern CSS features and animations. Fully responsive and optimized. Can be used as a template to build a more advanced project.</p>
             </div>
             <div class="card-footer text-center">
-              <a class="card-link" href="https://lyamkin.github.io/adventure-web/" target="_blank">
-                <i class="fab fa-internet-explorer icon-lg"></i>
+              <a class="card-link card-link-1" href="https://lyamkin.github.io/adventure-web/" target="_blank">
+                <i class="fas fa-globe icon-lg"></i>
               </a>
-              <a class="card-link" href="https://github.com/lyamkin/adventure-web" target="_blank">
+              <a class="card-link card-link-2" href="https://github.com/lyamkin/adventure-web" target="_blank">
                 <i class="fas fa-code icon-lg"></i>
               </a>
-              <a class="card-link" href="#" data-toggle="modal" data-target="#adventure-project">
+              <a class="card-link card-link-3" href="#" data-toggle="modal" data-target="#adventure-project">
                 <i class="fas fa-info-circle icon-lg"></i>
               </a>
             </div>
           </div>
         </div>
 
+        <div class="col mb-4">
+          <div class="card">
+            <img src="img/jewellery.png" class="card-img-top" alt="Adventure project screenshot">
+            <div class="card-body">
+              <h3>One page website</h3>
+              <p class="card-text">This is a one-page web site. Fully responsive and optimized. It was built like a template for the local jewelry small business.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a class="card-link card-link-1" href="https://lyamkin.github.io/jewelry-web/" target="_blank">
+                <i class="fas fa-globe icon-lg"></i>
+              </a>
+              <a class="card-link card-link-2" href="https://github.com/lyamkin/jewelry-web" target="_blank">
+                <i class="fas fa-code icon-lg"></i>
+              </a>
+              <a class="card-link card-link-3" href="#" data-toggle="modal" data-target="#jewelry-project">
+                <i class="fas fa-info-circle icon-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card">
+            <img src="img/code.jpg" class="card-img-top" alt="Adventure project screenshot">
+            <div class="card-body">
+              <h3>JavaScript snippets</h3>
+              <p class="card-text">This repository contains my solutions for "codewars" challenges</p>
+            </div>
+            <div class="card-footer text-center">
+              <a class="card-link card-link-2" href="https://github.com/lyamkin/codewars" target="_blank">
+                <i class="fas fa-code icon-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
     </div>
   </section>
 
@@ -109,7 +146,7 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <h2>Programming languages & tools</h2>
+            <h2 class="header-secondary">Programming languages & tools</h2>
           </div>
         </div>
       </div>
@@ -140,7 +177,7 @@
       <div class="row">
         <div class="col">
           <div class="py-5">
-            <h2 class="text-muted">Get In Touch</h2>
+            <h2 class="text-muted header-secondary">Get In Touch</h2>
           </div>
         </div>
       </div>
@@ -220,20 +257,53 @@
             <div class="row">
               <div class="col">
                 <p>
-                  The main valuable techniques and CSS properties that I have learned working on this project are:
+                  The main methods and CSS properties that I have learned working on this project are:
                 </p>
                 
                 <ul class="px-5">
                   <li>How CSS works behind the scene</li>
-                  <li>The main principles of Sass. Variables, nesting, mixins, functions. Install the npm package to compile sass</li>
+                  <li>The main principles of Sass. Variables, nesting, mixins, functions. Install the npm packages to compile sass</li>
                   <li>Implementing the 7-1 CSS Architecture with Sass</li>
                   <li>Basic Principles of Responsive Design and Layout Types</li>
-                  <li>Advanced CSS animation technics</li>
+                  <li>Advanced CSS animation methods</li>
                   <li>Mobile-First vs Desktop-First and Breakpoints</li>
                   <li>Writing Media Queries</li>
                   <li>Responsive images. Art Direction, Density Switching, Resolution Switching</li>
                   <li>Testing for Browser Support with @supports</li>
                   <li>Setting up a Simple Build Process with NPM Scripts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary-custom" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="jewelry-project" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">HTML5/CSS3/BOOTSTRAP</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <p>
+                  The main methods and CSS properties that I have learned working on this project are:
+                </p>
+                
+                <ul class="px-5">
+                  <li>Bootstrap UI framework</li>
+                  <li>Smooth scroll-spy</li>
+                  <li>Lightbox for Bootstrap</li>
                 </ul>
               </div>
             </div>

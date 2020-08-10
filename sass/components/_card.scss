@@ -1,5 +1,8 @@
+
 .card {
     box-shadow: 0 1rem 2rem rgba(0,0,0, .5);
+    height: 100%;
+    
 
     &-link:not(:last-child) {
         margin-right: 2.5rem;
@@ -7,11 +10,20 @@
 
     &-link:link,
     &-link:visited {
-        color: $color-primary-light;
+        display: inline-block;
+        text-decoration: none;
+        color: $color-primary;
+        text-shadow: 0 .5rem 1rem rgba(0,0,0, .5);
+        transition: all .5s;
     }
 
-    &-link:hover,
-    &-linl:active {
-        
+    &-link:hover {
+       text-shadow: 0 1rem 2rem rgba(0,0,0, .5);
+       transform: translateY(-4px); 
     }
+
+    &-link:active {
+        text-shadow: 0 .5rem 1rem rgba(0,0,0, .5);
+        transform: translateY(-2px); 
+     }
 }
