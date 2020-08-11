@@ -1,0 +1,9 @@
+.btn {
+    &-primary-custom {
+        background-color: $color-primary;
+        color: #fff;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .5);
+        transition: all .5s;
+    }
+
+}

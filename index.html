@@ -15,7 +15,7 @@
 <body>
   <!-- NAVIGATION SECTION -->
 
-  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <nav id="main-nav" class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,9 +45,7 @@
       <div class="container">
         <div class="row">
           <div class="col text-center py-5">
-            <h1>
-              <span>Full stack web developer</span>
-            </h1>
+            <h1 class="header-first">Full stack web developer</h1>
             <p class="lead mb-5">Hello! My name is <span class="text-primary-custom">Andrey Lyamkin</span>. I'm a self-educated, motivated and highly organized web developer.</p>
             <a class="about-link about-link-1" href="https://www.linkedin.com/in/andreylyamkin/" target="_blank">
               <i class="fab fa-linkedin icon-lg"></i>
@@ -211,7 +209,7 @@
               </div>
               <textarea class="form-control" placeholder="Message"></textarea>
             </div>
-            <input type="submit" value="Submit" class="btn btn-primary-custom btn-block">
+            <input type="submit" value="Submit" class="btn btn-primary-custom col col-md-6 col-offset-3">
           </form>
         </div>
       </div>
@@ -317,14 +315,10 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-  <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
